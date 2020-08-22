@@ -16,33 +16,48 @@
 		<header class="navbar">
 			<h2>S&J</h2>
 				<nav>
-					<img class="hamburger_open" src="nav-hamburger.png" alt="hamburger menu">
+					<div class="menu-btn">
+						<div class="menu-btn_burger"></div>
+					</div>
+						<div>
+							<ul class="nav-links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+					<!---<img class="hamburger_open" src="nav-hamburger.png" alt="hamburger menu">
 					<!---<a href="index.html">Home</a>
-					<a href="services.html">Services</a>
-					<a href="contact.html">Contact</a>--->
+					--->
 				</nav>
 				
 		</header>
 
 	<section class="jumbo">	
 		<img class="desktop_img" src="contact-jumbotron.png" alt="desktop jumbotron img">
-		<h1>Contact Us</h1>
+		<div class="bottom-left">Contact Us</div>
 	</section>
 
 	<main>
 		<section class="contact_info">
 			<h3>Get In Touch</h3>
 				<form>
-					<label for="enterEmail">Email Address</label>
-					<input type="email" id="enterEmail" placeholder="Enter email">
-					<p>We'll never share your email with anyone else.</p>
-					<label for="buildings">How many buildings do you need planned?</label>
-					<input type="number" min="1" max="5" id="buildings">
-					<label for="projectDetails">Provide a brief overview of your project needs:</label>
+					<div id="emailInfo"> 
+						<label for="enterEmail">Email Address</label>
+						<input type="email" id="enterEmail" placeholder="Enter email">
+						<p>We'll never share your email with anyone else.</p>
+					</div>
+					<div id="projectInfo">
+						<label for="buildings">How many buildings do you need planned?</label>
+						<input type="number" min="1" max="5" id="buildings">
+						<label for="projectDetails">Provide a brief overview of your project needs:</label>
+					</div>
+					<div id="selector">
 					<input type="radio" name="projectDetails" value="small">I am a small business</input>
 					<input type="radio" name="projectDetails" value="residential">I am a residential owner</input>
 					<input type="radio" name="projectDetails" value="corporation">I am a corporation</input>
 					<input type="Submit" value="Submit">
+					</div>
 				</form>
 		</section>
 
@@ -108,6 +123,6 @@
 	</footer>
 
 	</div> <!--Page container-->
-	<script src="js/index.js"></script>
+	<script src="js/contact.js"></script>
 </body>
 </html>
