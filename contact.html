@@ -6,6 +6,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<meta name="viewport" content="width-device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="css/index.css">
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -32,108 +33,96 @@
 			</div>
 		 </section>
 
-		 <div class="jumbo-container contact">
-			<img src="img/contact/contact-jumbotron.png" alt="Strange building">
-			<h2 class="jumbotron-text">Contact Us</h2>
+		 <section class = "contact-us-head">
+			<header class = "contact-us">
+				<div class = "contact-us-text">
+					<h1>Contact Us</h1>
+				</div>
+			</header>
+		</section>
+		
+		
+		<div class = "img_container">
+			<picture>
+				<source media="(max-width:800px)" srcset="img/contact/contact-mobile-jumbotron.png">
+				<img src="img/contact/contact-jumbotron.png" alt="Modern Building"\>
+			</picture>
+			<div class="bottom-left">Contact Us</div>
 		</div>
-		 
-		<section class="main-content-contact">	
-			<div class="contact-form">
-				<h2 class="get-in-touch">Get In Touch</h2>
-	
-				<p>Email Address</p> 
-	
-				<form class="email" action="">
-					<input type="text" name="email" placeholder="Enter email">
-				</form>
-	
-				<p class="email-subtext">We'll never share your email with anyone else.</p>
-	
-				<p>How many buildings do you need planned?</p>
-	
-				<select name="buildings">
+
+		<div class= "contact-container">
+			<div class="block1">
+				<h2>Get In Touch</h2><br>
+				<form>
+					<div class="email">
+					E-mail Address:<br>
+						<input type="text" placeholder="Enter Email" name="email" style="width:350px">
+					</div>
+				</form>  
+					<span>We'll never share your email with anyone else.</span><br><br>
+				
+				<form>
+				<label for="buildings">How many buildings do you need planned?</label>
+				<br>
+  				<select class="buildings" name="building" style="height:30px;" >
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="4">3</option>
 				</select>
-	
-				<p>Provide a brief overview of your project needs:</p>
-	
-				<textarea name="" id="" cols="40" rows="10"></textarea>
-				
-				<form class="radio">
-					<input type="radio" name="business" value="small-business" checked>I am a small business<br>
-					<input type="radio" name="business" value="residential">I am a residential owner<br>
-					<input type="radio" name="business" value="corporation">I am a corporation
 				</form>
-	
-				<button>Submit</button> 
+				<br>
+				<br>
+				<form>
+					<div class="project_needs">
+					Provide a brief overview of your project needs:<br>
+					<input type="text" placeholder="" name="needs" style="height:150px;width:350px"required>
+					</div>
+				</form>  
+				<br>
+				<form action="/action_page.php">
+					<input type="radio" id=option1" name="small" value="I am a small busines">
+					<label for="small">I am a small business</label><br>
+					<input type="radio" id=option2" name="residential" value="I am a residential owner">
+					<label for="residential">I am a residential owner</label><br>
+					<input type="radio" id=option1" name="corporation" value="I am a corporation">
+					<label for="corporation">I am a corportation</label><br>
+					<br>
+					<button> Submit</button>
+				</form>
 			</div>
-	
-			<div class="work-locations">
-				<h2 class="where-we-work">Where We Work</h2>
-	
-				<div class="newyork">
+
+			<div class="locations">
+				<h2>Where We Work</h2><br>
+				<div id ="loc1">
 					<h3>New York</h3>
-					<p>123 Lane</br>
-					Suite 100</br>
-					Albany, NY 12345</br>
-					202 555 0144</p>
+					<span>123 lane<br> 
+						  Suite 100<br> 
+						  Albany, NY 12345<br> 
+						  202 555 0144
+					</span>
 				</div>
-	
-				<div class="florida">
+				<br>
+				<div id ="loc2">
 					<h3>Florida</h3>
-					<p>Ocean Drive</br>
-					Suite 201</br>
-					Orlando, FL 22345</br>
-					502 555 0144</p>
+					<span>Ocean Drive<br> 
+						  Suite 201<br> 
+						  Orlando, FL 22345<br> 
+						  502 555 0144
+					</span> 
 				</div>
-	
-				<div class="cali">
+				<div id ="loc3">
+					<br>
 					<h3>California</h3>
-					<p>Mountain Street</br>
-					Suite 105</br>
-					San Diego, CA 22345</br>
-					702 555 0144</p> 
+					<span>Mountain Street<br> 
+						  Suite 105<br> 
+						  San Diego, CA 22345<br> 
+						  702 555 0144</span> 
 				</div>
 			</div>
-		</section>
+		</div>
+		
 		 
-		 <!-- Contactd Us Content 
-  			
-  
-			Get In Touch
-			Email Address
-			Enter Email
-			We'll never share your email with anyone else.
-			How many buildings do you need planned?
-			1-5
-			Provide a brief overview of your project needs:
-			I am a small business
-			I am a residential owner
-			I am a corporation
-			Submit
-			Where We Work
-			New York
-			123 Lane
-			Suite 100
-			Albany, NY 12345
-			202 555 0144
-			Florida
-			Ocean Drive
-			Suite 201
-			Orlando, FL 22345
-			502 555 0144
-			California
-			Mountain Street
-			Suite 105
-			San Diego, CA 22345
-			702 555 0144
-			-->
-
-
 		 <footer>
 			<div class="row">
 			   <div class="fourth">
