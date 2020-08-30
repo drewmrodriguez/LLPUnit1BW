@@ -33,30 +33,20 @@
 			</div>
 		 </section>
 
-		 <section class = "contact-us-head">
-			<header class = "contact-us">
-				<div class = "contact-us-text">
-					<h1>Contact Us</h1>
-				</div>
-			</header>
-		</section>
-		
-		
-		<div class = "img_container">
-			<picture>
-				<source media="(max-width:800px)" srcset="img/contact/contact-mobile-jumbotron.png">
-				<img src="img/contact/contact-jumbotron.png" alt="Modern Building"\>
-			</picture>
-			<div class="bottom-left">Contact Us</div>
-		</div>
+		 <header>
+            <img class="desktop" src="img/contact/contact-jumbotron.png" alt="">
+            <img class = "mobile" src="img/contact/contact-mobile-jumbotron.png" alt="">
+            <h1>Contact Us</h1>
+         </header>
 
 		<div class= "contact-container">
-			<div class="block1">
+			<div class="right-block">
 				<h2>Get In Touch</h2><br>
+				<div class="input_info">
 				<form>
 					<div class="email">
 					E-mail Address:<br>
-						<input type="text" placeholder="Enter Email" name="email" style="width:350px">
+						<input class="typeEmail" type="text" placeholder="Enter Email" name="email">
 					</div>
 				</form>  
 					<span>We'll never share your email with anyone else.</span><br><br>
@@ -64,7 +54,7 @@
 				<form>
 				<label for="buildings">How many buildings do you need planned?</label>
 				<br>
-  				<select class="buildings" name="building" style="height:30px;" >
+  				<select class="buildings" name="building" >
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -76,7 +66,7 @@
 				<form>
 					<div class="project_needs">
 					Provide a brief overview of your project needs:<br>
-					<input type="text" placeholder="" name="needs" style="height:150px;width:350px"required>
+					<input class="project_input" type="text" placeholder="" name="needs">
 					</div>
 				</form>  
 				<br>
@@ -90,6 +80,7 @@
 					<br>
 					<button> Submit</button>
 				</form>
+			</div>
 			</div>
 
 			<div class="locations">
