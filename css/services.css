@@ -69,9 +69,29 @@ p {
 	margin: 0 auto;
 }
 
+.main_content {
+	padding: 5%;
+}
 
+h2 {
+	font-size: 1rem;
+}
 
+button {
+	border: 1px solid #222222;
+	background-color: #FFFFFF;
+	color: #222222;
+	width: 24%;
+	padding: 15px;
+	font-size: 1.6rem;
+	justify-content: space-between;
+}
 
+button:hover {
+	background-color: #222222;
+	color: #FFFFFF;
+	cursor: pointer;
+}
 
 
 
