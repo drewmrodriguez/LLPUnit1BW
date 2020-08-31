@@ -70,27 +70,47 @@ p {
 }
 
 .main_content {
-	padding: 5%;
+	padding: 4.5%;
 }
 
-h2 {
-	font-size: 1rem;
+.p1 {
+	font-size: 1.63rem;
+	margin-bottom: 4%;
+	line-height: 3rem;
 }
 
 button {
 	border: 1px solid #222222;
 	background-color: #FFFFFF;
 	color: #222222;
-	width: 24%;
+	width: 20%;
 	padding: 15px;
 	font-size: 1.6rem;
 	justify-content: space-between;
+	font-weight: 800;
+	margin: 1.7rem;
 }
 
 button:hover {
-	background-color: #222222;
+	background-color: skyblue;
 	color: #FFFFFF;
 	cursor: pointer;
+}
+
+.construction {
+	display: flex;
+	font-size: 1.63rem;
+	margin-top: 6%;
+	margin-bottom: 5%;
+}
+
+.p2 {
+	line-height: 3rem;
+}
+
+.img_construction {
+	width: 150%;
+	margin-left: 4rem;
 }
 
 
