@@ -113,6 +113,27 @@ button:hover {
 	margin-left: 4rem;
 }
 
+@media (max-width: 600px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+	button {
+		flex-direction: column;
+		width: 100%;
+		margin-right: 1%;
+		margin-left: 1%;
+	}
+	.construction {
+		flex-direction: column;
+	}
+	.img_construction {
+		width: 100%;
+		margin-left: 0%;
+		margin-top: 7%;
+	}
+}
+
 
 
 
